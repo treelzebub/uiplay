@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_gravity="top"
+  android:clipChildren="false"
+  android:clipToPadding="false"
+  android:orientation="vertical"
+  android:padding="12dp">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0px"
+    android:layout_weight="2"
+    android:orientation="vertical">
+
+    <FrameLayout
+      android:id="@+id/one_box"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+      <ImageView
+        android:id="@+id/one"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="12dp"
+        android:background="@android:color/holo_orange_dark" />
+    </FrameLayout>
+
+    <FrameLayout
+      android:id="@+id/two_box"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+      <ImageView
+        android:id="@+id/two"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="12dp"
+        android:background="@android:color/holo_red_dark" />
+    </FrameLayout>
+
+    <FrameLayout
+      android:id="@+id/three_box"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+      <ImageView
+        android:id="@+id/three"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="12dp"
+        android:background="@android:color/holo_blue_dark" />
+    </FrameLayout>
+
+  </LinearLayout>
+
+  <FrameLayout
+    android:id="@+id/dest_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="0px"
+    android:layout_weight="1"
+    android:layout_gravity="center">
+
+    <ImageView
+      android:id="@+id/dest_img"
+      android:layout_width="96dp"
+      android:layout_height="96dp"
+      android:layout_margin="16dp"
+      android:background="@android:color/holo_green_dark" />
+  </FrameLayout>
+</LinearLayout>
